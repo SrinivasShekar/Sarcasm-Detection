@@ -3,17 +3,13 @@ library(dplyr)
 #install_github("geoffjentry/twitteR")
 library(twitteR)
 
-setup_twitter_oauth('8o4cT2QQl1MDoREZvigMSc4gq',
-                     'KPmZ4aFkwlG1KrVR6FriYoyOA2ex8FpijSv0CEpQ4bMDeH83Mj',
-                     '986221635198832641-bJk6PAYXyPiOe94k6HEy4SE6mNfEnPw',
-                     'oF9l7yvik6UbZsBWXKfd0S8Jm6u3u26szDakHhihlK5zW') 
-'''
-consumer_key <- '8o4cT2QQl1MDoREZvigMSc4gq'
-consumer_secret <- 'KPmZ4aFkwlG1KrVR6FriYoyOA2ex8FpijSv0CEpQ4bMDeH83Mj'
-access_token <- '986221635198832641-bJk6PAYXyPiOe94k6HEy4SE6mNfEnPw'
-access_secret <- 'oF9l7yvik6UbZsBWXKfd0S8Jm6u3u26szDakHhihlK5zW'
-setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret)
-'''
+setup_twitter_oauth(consumer_key,
+                     consumer_secret,
+                     access_token,
+                   access_secret ) 
+
+##Enter ur consumer key,consumer_secret,access_token,access_secret
+
 #For a particular search term
 tweets <- searchTwitter("#sarcasm", n=10000)# top 300 tweets that contain search term
 tweets3<- searchTwitter("#sarcastic",n=10000)
